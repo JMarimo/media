@@ -1,4 +1,6 @@
-import WidgetTimeLine from './widgetTimeLine'
+import Timeline from './Timeline';
+import TimelineMarkups from './TimelineMarkups';
 
-const widgetTimeLine = new WidgetTimeLine()
-widgetTimeLine.init()
+const container = document.querySelector('.container');
+const timeline = new Timeline(new TimelineMarkups(container));
+timeline.init();
